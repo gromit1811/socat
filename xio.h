@@ -379,6 +379,13 @@ union integral {
       char *srcaddr;	/* source address */
    } u_ip_mreq_source;
 #endif
+#if HAVE_STRUCT_GROUP_SOURCE_REQ
+   struct {
+      char *mcaddr;
+      char ifindex[IF_NAMESIZE+1];
+      char *srcaddr;	/* source address */
+   } u_group_source_req;
+#endif
 #if WITH_IP4
    struct in_addr  u_ip4addr;
 #endif
