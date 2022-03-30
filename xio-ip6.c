@@ -29,6 +29,15 @@ const struct optdesc opt_ipv6_join_group = { "ipv6-join-group", "join-group", OP
 #ifdef MCAST_JOIN_SOURCE_GROUP
 const struct optdesc opt_ipv6_join_source_group = { "ipv6-join-source-group", "join-source-group", OPT_IPV6_JOIN_SOURCE_GROUP, GROUP_SOCK_IP6, PH_PASTSOCKET, TYPE_GROUP_SOURCE_REQ, OFUNC_SOCKOPT, SOL_IPV6, MCAST_JOIN_SOURCE_GROUP };
 #endif
+#ifdef IPV6_MULTICAST_IF
+const struct optdesc opt_ipv6_multicast_if = { "ipv6-multicast-if", "multicast-if", OPT_IPV6_MULTICAST_IF, GROUP_SOCK_IP6, PH_PASTSOCKET, TYPE_INT, OFUNC_SOCKOPT, SOL_IPV6, IPV6_MULTICAST_IF };
+#endif
+#ifdef IPV6_MULTICAST_LOOP
+const struct optdesc opt_ipv6_multicast_loop = { "ipv6-multicast-loop", "multicast-loop", OPT_IPV6_MULTICAST_LOOP, GROUP_SOCK_IP6, PH_PASTSOCKET, TYPE_INT, OFUNC_SOCKOPT, SOL_IPV6, IPV6_MULTICAST_LOOP };
+#endif
+#ifdef IPV6_MULTICAST_HOPS
+const struct optdesc opt_ipv6_multicast_hops = { "ipv6-multicast-hops", "multicast-hops", OPT_IPV6_MULTICAST_HOPS, GROUP_SOCK_IP6, PH_PASTSOCKET, TYPE_INT, OFUNC_SOCKOPT, SOL_IPV6, IPV6_MULTICAST_HOPS };
+#endif
 #ifdef IPV6_PKTINFO
 const struct optdesc opt_ipv6_pktinfo = { "ipv6-pktinfo", "pktinfo", OPT_IPV6_PKTINFO, GROUP_SOCK_IP6, PH_PASTSOCKET, TYPE_INT, OFUNC_SOCKOPT, SOL_IPV6, IPV6_PKTINFO };
 #endif

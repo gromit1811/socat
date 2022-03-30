@@ -14,6 +14,9 @@
 extern const struct optdesc opt_ipv6_v6only;
 extern const struct optdesc opt_ipv6_join_group;
 extern const struct optdesc opt_ipv6_join_source_group;
+extern const struct optdesc opt_ipv6_multicast_if;
+extern const struct optdesc opt_ipv6_multicast_loop;
+extern const struct optdesc opt_ipv6_multicast_hops;
 extern const struct optdesc opt_ipv6_pktinfo;
 extern const struct optdesc opt_ipv6_recvpktinfo;
 extern const struct optdesc opt_ipv6_rthdr;
